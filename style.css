@@ -8,7 +8,8 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #FFF;
+    margin-top: 300PX;
 }
 
 #center{
@@ -33,7 +34,7 @@ button {
     margin-right: 10px;
     padding: 10px;
     font-size: 16px;
-    margin-top: 300px;
+    margin-top: 60px;
 }
 
 button {
@@ -79,7 +80,7 @@ li {
 @media only screen and (min-width: 601px) {
     /* Add your styles for large screens here */
     body {
-        font-size: 16px;
+        font-size: 16px;
     }
 }
 
