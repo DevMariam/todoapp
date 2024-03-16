@@ -51,7 +51,7 @@ form.addEventListener('submit', function(e) {
     const li = document.createElement('li');
     
     // Set the todo text
-    li.textContent = taskText;
+    li.textContent = `${taskText} (Reminder: ${reminderTime.toLocaleString()})`;
     
     // Append the reminder time as a data attribute
     li.setAttribute('data-reminder', reminderTime);
