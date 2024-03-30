@@ -21,7 +21,7 @@ function updateCalendar() {
     const currentDate = new Date();
     const dateString = currentDate.toDateString();
     const timeString = padZero(currentDate.getHours()) + ':' + padZero(currentDate.getMinutes());
-    calendar.innerHTML = `Today is ${dateString} Current time is ${timeString}.`;
+    calendar.innerHTML = `Today is ${dateString},  Current time is ${timeString}.`;
 }
 
 // Update calendar on load
