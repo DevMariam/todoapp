@@ -2,14 +2,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     padding: 20px;
-    background-image: url(./flower.jpg);
-    background-size: cover;
+    background-image: url(./flower.jpg), url(./todo.jpg);
+    background-size:cover;
+    background-position: 100%;
 }
 
 h1 {
     text-align: center;
     color: #FFF;
-    margin-top: 300PX;
+    margin-top: 270pX;
 }
 
 #center{
@@ -19,7 +20,7 @@ margin: 0  auto;
 }
 
 #calendar {
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -29,6 +30,7 @@ form {
 }
 
 input[type="text"],
+/* cSpell:ignore datetime */
 input[type="datetime-local"],
 button {
     margin-right: 10px;
@@ -68,11 +70,47 @@ li {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+
+.has-note {
+    color: #666;
+    font-style: italic;
+}
+
+/* Style for search input */
+#searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 200px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Style for sort buttons */
+#sortByName,
+#sortByReminderDate {
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sortByName:hover,
+#sortByReminderDate:hover {
+    background-color: #45a049;
+}
+
+
 /* Styles for small screens */
 @media only screen and (max-width: 600px) {
     /* Add your styles for small screens here */
     body {
         font-size: 14px;
+        background-image: url(./flower.jpg);
     }
 }
 
@@ -84,3 +122,8 @@ li {
     }
 }
 
+@media only screen and (max-width: 768px){
+body{
+    background-image: url('./todo.jpg');
+}
+}
