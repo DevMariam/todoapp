@@ -39,6 +39,16 @@ button {
     margin-top: 60px;
 }
 
+#material-symbols-outlined::-webkit-calender-picker-indicator{
+    background-image: url('./cal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+margin-right: 5px;
+cursor: pointer;
+
+}
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -120,11 +130,16 @@ li {
     /* Add your styles for large screens here */
     body {
         font-size: 16px;
+        
     }
+
 }
 
 @media only screen and (max-width: 768px){
 body{
     background-image: url('./todo.jpg');
+}
+#material-symbols-outlined::-webkit-calender-picker-indicator{
+    display: none;
 }
 }
