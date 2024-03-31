@@ -39,15 +39,7 @@ button {
     margin-top: 60px;
 }
 
-#material-symbols-outlined::-webkit-calender-picker-indicator{
-    background-image: url('./cal.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 0;
-margin-right: 5px;
-cursor: pointer;
 
-}
 
 button {
     background-color: #4CAF50;

@@ -190,3 +190,4 @@ addSortingEventListeners();
 
 // Set focus to the task input on page load
 focusTaskInput();
+
